@@ -12,8 +12,8 @@ export interface Slide {
 
 @Component({
   selector: 'app-presentation',
-  templateUrl: 'presentation.page.html',
-  styleUrls: ['presentation.page.scss']
+  templateUrl: './presentation.page.html',
+  styleUrls: ['./presentation.page.scss']
 })
 export class PresentationPage {
   slides: Slide[];
@@ -74,7 +74,7 @@ export class PresentationPage {
     this.router.navigate(['PresentationPage']);
   }
 
-  onSlideChangeStart(slider) {
+  onSlideChangeStart(slider: any) {
     this.showSkip = !slider.isEnd();
   }
 

@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
-import { Chantier } from './chantier';
+import { Chantier } from '../../chantier';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -17,7 +17,7 @@ const apiUrl = 'http://localhost:3000/api/v1/chantier';
   providedIn: 'root'
 })
 export class ApiService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

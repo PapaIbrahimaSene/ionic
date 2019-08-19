@@ -12,11 +12,22 @@
 </ion-header>
 
 <ion-content no-bounce>
-  <ion-slides pager="true" autoplay="5000" speed="150" loop="true" mousewheel="true" simulateTouch="true"
-    disableOnInteraction="false" (ionSlideWillChange)="onSlideChangeStart($event)">
+  <ion-slides
+    pager="true"
+    autoplay="5000"
+    speed="150"
+    loop="true"
+    mousewheel="true"
+    simulateTouch="true"
+    disableOnInteraction="false"
+    (ionSlideWillChange)="onSlideChangeStart($event)"
+  >
     <ion-slide *ngFor="let slide of slides">
       <div class="slide-block">
-        <div class="slide-image" [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"></div>
+        <div
+          class="slide-image"
+          [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
+        ></div>
         <div class="slide-copy">
           <img [src]="slide.icon" class="slide-icon" />
           <p [innerHTML]="slide.description"></p>
