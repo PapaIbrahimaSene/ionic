@@ -41,26 +41,26 @@ export class PresentationPage {
           {
             title: values.PRESENTATION_SLIDE1_TITLE,
             description: values.PRESENTATION_SLIDE1_DESCRIPTION,
-            image: 'assets/img/visualhq_qr.svg',
-            icon: 'assets/img/icon_hq.svg'
+            image: '../../assets/img/visualhq_qr.svg',
+            icon: '../../assets/img/icon_hq.svg'
           },
           {
             title: values.PRESENTATION_SLIDE2_TITLE,
             description: values.PRESENTATION_SLIDE2_DESCRIPTION,
-            image: 'assets/img/visualhq_qr.svg',
-            icon: 'assets/img/icon_hq.svg'
+            image: '../../assets/img/visualhq_qr.svg',
+            icon: '../../assets/img/icon_hq.svg'
           },
           {
             title: values.PRESENTATION_SLIDE3_TITLE,
             description: values.PRESENTATION_SLIDE3_DESCRIPTION,
-            image: 'assets/img/visualhq_qr.svg',
-            icon: 'assets/img/icon_hq.svg'
+            image: '../../assets/img/visualhq_qr.svg',
+            icon: '../../assets/img/icon_hq.svg'
           },
           {
             title: values.PRESENTATION_SLIDE4_TITLE,
             description: values.PRESENTATION_SLIDE4_DESCRIPTION,
-            image: 'assets/img/visualhq_qr.svg',
-            icon: 'assets/img/icon_hq.svg'
+            image: '../../assets/img/visualhq_qr.svg',
+            icon: '../../assets/img/icon_hq.svg'
           }
         ];
       });

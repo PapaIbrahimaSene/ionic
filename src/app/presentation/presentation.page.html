@@ -1,16 +1,14 @@
 <ion-header no-shadow>
-  <ion-nav>
-    <ion-buttons end *ngIf="showSkip">
-      <button ion-button (click)="startApp()" color="primary">
-        {{ 'PRESENTATION_SKIP_BUTTON' | translate }}
-      </button>
-    </ion-buttons>
-    <ion-buttons end *ngIf="!showSkip">
-      <button ion-button (click)="backToPresentation()" color="primary">
-        {{ 'PRESENTATION_BACK_BUTTON' | translate }}
-      </button>
-    </ion-buttons>
-  </ion-nav>
+  <ion-buttons end *ngIf="showSkip">
+    <button ion-button (click)="startApp()" color="primary">
+      {{ 'PRESENTATION_SKIP_BUTTON' | translate }}
+    </button>
+  </ion-buttons>
+  <ion-buttons end *ngIf="!showSkip">
+    <button ion-button (click)="backToPresentation()" color="primary">
+      {{ 'PRESENTATION_BACK_BUTTON' | translate }}
+    </button>
+  </ion-buttons>
 </ion-header>
 
 <ion-content no-bounce>
