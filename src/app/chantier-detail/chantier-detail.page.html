@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Chantier Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="example-container mat-elevation-z8">
+    <div class="example-loading-shade"
+          *ngIf="isLoadingResults">
+      <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+    </div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title><h2>{{chantier.chantierNom}}</h2></mat-card-title>
+        <mat-card-subtitle>{{chantier.prod_desc}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <dl>
+          <dt>Chantier Price:</dt>
+          <dd>{{chantier.prod_price}}</dd>
+          <dt>Updated At:</dt>
+          <dd>{{chantier.updated_at | date}}</dd>
+        </dl>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-flat-button color="primary" (click)="editProduct(chantier.chantierId)"><mat-icon>edit</mat-icon></a>
+        <a mat-flat-button color="warn" (click)="deleteProduct(chantier.chantierId)"><mat-icon>delete</mat-icon></a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</ion-content>

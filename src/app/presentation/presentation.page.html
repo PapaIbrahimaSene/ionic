@@ -1,0 +1,37 @@
+<ion-header no-shadow>
+  <ion-nav>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">
+        {{ 'PRESENTATION_SKIP_BUTTON' | translate }}
+      </button>
+    </ion-buttons>
+    <ion-buttons end *ngIf="!showSkip">
+      <button ion-button (click)="backToPresentation()" color="primary">
+        {{ 'PRESENTATION_BACK_BUTTON' | translate }}
+      </button>
+    </ion-buttons>
+  </ion-nav>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides pager="true" autoplay="5000" speed="150" loop="true" mousewheel="true" simulateTouch="true"
+    disableOnInteraction="false" (ionSlideWillChange)="onSlideChangeStart($event)">
+    <ion-slide *ngFor="let slide of slides">
+      <div class="slide-block">
+        <div class="slide-image" [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"></div>
+        <div class="slide-copy">
+          <img [src]="slide.icon" class="slide-icon" />
+          <p [innerHTML]="slide.description"></p>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-block">
+        <button ion-button icon-end start clear (click)="startApp()">
+          {{ 'PRESENTATION_CONTINUE_BUTTON' | translate }}
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

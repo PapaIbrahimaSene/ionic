@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/chantier-detail/{{chantierId}}"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Chantier Edit</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <div class="example-container mat-elevation-z8">
+    <div class="example-loading-shade"
+         *ngIf="isLoadingResults">
+      <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+    </div>
+    <mat-card class="example-card">
+      <form [formGroup]="productForm" (ngSubmit)="onFormSubmit()">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Chantier Name" formControlName="chantierNom"
+                 [errorStateMatcher]="matcher">
+          <mat-error>
+            <span *ngIf="!productForm.get('chantierNom').valid && productForm.get('chantierNom').touched">Please enter Chantier Name</span>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Chantier Desc" formControlName="prod_desc"
+                 [errorStateMatcher]="matcher">
+          <mat-error>
+            <span *ngIf="!productForm.get('prod_desc').valid && productForm.get('prod_desc').touched">Please enter Chantier Description</span>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Chantier Price" formControlName="prod_price"
+                 [errorStateMatcher]="matcher">
+          <mat-error>
+            <span *ngIf="!productForm.get('prod_price').valid && productForm.get('prod_price').touched">Please enter Chantier Price</span>
+          </mat-error>
+        </mat-form-field>
+        <div class="button-row">
+          <button type="submit" [disabled]="!productForm.valid" mat-flat-button color="primary"><mat-icon>save</mat-icon></button>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+</ion-content>

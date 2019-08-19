@@ -1,0 +1,57 @@
+{
+  "NAME": "Nom",
+  "PASSWORD": "Mot de passe",
+  "EMAIL": "E-mail",
+  "LOGIN": "Connexion",
+  "SIGNUP": "Inscription",
+
+  "TAB1_TITLE": "Teams",
+  "TAB2_TITLE": "Recherche",
+  "TAB3_TITLE": "Paramètres",
+
+  "MAP_TITLE": "Carte",
+
+  "PRESENTATION_SKIP_BUTTON": "Accéder à l'Inventaire.",
+  "PRESENTATION_BACK_BUTTON": "Revoir la Présentation",
+  "PRESENTATION_CONTINUE_BUTTON": "Accédez à l'Inventaire.",
+
+  "PRESENTATION_SLIDE1_TITLE": "Cycles de vies",
+  "PRESENTATION_SLIDE1_DESCRIPTION": "<b>Gérer </b>les cycles de vie <br> du matériel et des équipements.",
+
+  "PRESENTATION_SLIDE2_TITLE": "Données et Information",
+  "PRESENTATION_SLIDE2_DESCRIPTION": "<b>Améliorer </b>la qualité des données <br> et l’accès à l’information <br>d'appui des décisions<br>de gestion de l’actif.",
+
+  "PRESENTATION_SLIDE3_TITLE": "Cycle d'approvisionnement SAP PM",
+  "PRESENTATION_SLIDE3_DESCRIPTION": "<b>Accroître</b> l’efficience opérationnelle<br>du cycle d’approvisionnement<br>et réduire la saisie des données.",
+
+  "PRESENTATION_SLIDE4_TITLE": "Systèmes satellites et délais d’approvisionnement SAP MM",
+  "PRESENTATION_SLIDE4_DESCRIPTION": "<b>Diminuer </b>les systèmes satellites <br> de gestion courante de l’actif. <br> <br><b>Réduire </b> les délais d’approvisionnement <br> et les risques d’erreur.",
+
+  "WELCOME_INTRO": "Gestion des actifs par étiquetage électronique.",
+
+  "SETTINGS_TITLE": "Paramètres",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PAGE_PROFILE": "Modifier le profil",
+
+  "WELCOME_TITLE": "Bienvenue",
+
+  "LOGIN_TITLE": "Connexion",
+  "LOGIN_ERROR": "Connexion impossible. Veuillez vérifier les informations de votre compte et réessayer.",
+  "LOGIN_BUTTON": "Connexion",
+  "SIGNUP_TITLE": "Inscription",
+  "SIGNUP_ERROR": "Inscription impossible. Veuillez vérifier les informations de votre compte et réessayer.",
+  "SIGNUP_BUTTON": "Inscription",
+
+  "LIST_MASTER_TITLE": "Teams",
+
+  "ITEM_CREATE_TITLE": "Nouvel item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Ajouter une image",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Recherche"
+}

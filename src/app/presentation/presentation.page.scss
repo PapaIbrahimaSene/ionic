@@ -1,0 +1,196 @@
+page-presentation {
+  .toolbar-background {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .slide-zoom {
+    height: 100%;
+    .slide-block {
+      height: 100%;
+      background-color: #042f5a;
+    }
+  }
+
+  .slide-title {
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    opacity: 0.35;
+  }
+
+  .swiper-wrapper ion-slide {
+    .slide-image {
+      height: 100%;
+      width: 100%;
+      margin: 0 0 36px;
+      background-repeat: repeat-x;
+      background-size: cover;
+      animation: filter-slide-image 7s infinite,
+        animatedBackground 35s linear infinite;
+      -webkit-animation: filter-slide-image 7s infinite,
+        animatedBackground 35s linear infinite;
+    }
+    .slide-icon {
+      height: 45px;
+      width: auto;
+      margin: 0 0 23px -1px;
+    }
+  }
+
+  .slide-copy {
+    width: 80%;
+    top: 50px;
+    left: 35px;
+    position: absolute;
+    text-align: left;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.55rem;
+    font-weight: 300;
+    line-height: 1.55;
+    letter-spacing: 0.02rem;
+    color: #ffffff;
+    text-align: left;
+    b {
+      font-weight: 700;
+      color: #6ba2cf;
+    }
+  }
+
+  .button-ios,
+  .button-md {
+    margin-top: 105px;
+    font-size: 1.45rem;
+    text-transform: none;
+    color: #91acce;
+  }
+
+  .bar-button-ios,
+  .bar-button-md,
+  .bar-button-default.bar-button-ios-primary {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: none;
+    margin: 1.3rem 0.2rem;
+    color: #91a2b7;
+  }
+
+  .bar-button-md-primary:hover:not(.disable-hover) {
+    color: rgb(6, 36, 102);
+  }
+
+  .swiper-pagination-bullet-active {
+    background: rgb(107, 162, 207) !important;
+    opacity: 1 !important;
+  }
+  .swiper-pagination-bullet {
+    border-radius: 100%;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #91a2b7;
+    opacity: 0.2;
+    pointer-events: auto;
+  }
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 10px;
+  }
+}
+
+@keyframes filter-slide-image {
+  0% {
+    /* IE 8 */
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=9)';
+    /* IE 5-7 */
+    filter: alpha(opacity=9);
+    /* Netscape */
+    -moz-opacity: 0.09;
+    /* Safari 1.x */
+    -khtml-opacity: 0.09;
+    /* Good browsers */
+    opacity: 0.09;
+  }
+
+  50% {
+    /* IE 8 */
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=19)';
+    /* IE 5-7 */
+    filter: alpha(opacity=19);
+    /* Netscape */
+    -moz-opacity: 0.19;
+    /* Safari 1.x */
+    -khtml-opacity: 0.19;
+    /* Good browsers */
+    opacity: 0.19;
+  }
+
+  100% {
+    /* IE 8 */
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=9)';
+    /* IE 5-7 */
+    filter: alpha(opacity=9);
+    /* Netscape */
+    -moz-opacity: 0.09;
+    /* Safari 1.x */
+    -khtml-opacity: 0.09;
+    /* Good browsers */
+    opacity: 0.09;
+  }
+}
+
+@-webkit-keyframes filter-slide-image {
+  0% {
+    /* IE 8 */
+    -webkit-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=9)';
+    /* IE 5-7 */
+    -webkit-filter: alpha(opacity=9);
+    /* Netscape */
+    -webkit-moz-opacity: 0.09;
+    /* Safari 1.x */
+    -webkit-khtml-opacity: 0.09;
+    /* Good browsers */
+    -webkit-opacity: 0.09;
+  }
+
+  50% {
+    /* IE 8 */
+    -webkit-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=19)';
+    /* IE 5-7 */
+    -webkit-filter: alpha(opacity=19);
+    /* Netscape */
+    -moz-opacity: 0.19;
+    /* Safari 1.x */
+    -khtml-opacity: 0.19;
+    /* Good browsers */
+    -webkit-opacity: 0.19;
+  }
+
+  100% {
+    /* IE 8 */
+    -webkit-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=9)';
+    /* IE 5-7 */
+    -webkit-filter: alpha(opacity=9);
+    /* Netscape */
+    -webkit-moz-opacity: 0.09;
+    /* Safari 1.x */
+    -webkit-khtml-opacity: 0.09;
+    /* Good browsers */
+    -webkit-opacity: 0.09;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
