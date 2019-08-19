@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
+import { Platform } from '@ionic/angular';
 import { TranslateService } from '@ngx-translate/core';
 
 export interface Slide {
@@ -22,8 +23,10 @@ export class PresentationPage {
   constructor(
     private router: Router,
     public menu: MenuController,
-    translate: TranslateService
+    public translate: TranslateService,
+    public platform: Platform
   ) {
+    this.dir = platform.dir();
     translate
       .get([
         'PRESENTATION_SLIDE1_TITLE',

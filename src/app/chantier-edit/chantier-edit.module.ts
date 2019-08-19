@@ -43,4 +43,4 @@ const routes: Routes = [
   ],
   declarations: [ChantierEditPage]
 })
-export class ProductEditPageModule { }
+export class ProductEditPageModule {}
