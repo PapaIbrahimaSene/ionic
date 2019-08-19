@@ -13,7 +13,7 @@ export interface Slide {
 @Component({
   selector: 'app-presentation',
   templateUrl: 'presentation.page.html',
-  styleUrls: ['./presentation.page.scss']
+  styleUrls: ['presentation.page.scss']
 })
 export class PresentationPage {
   slides: Slide[];
