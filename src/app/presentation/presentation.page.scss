@@ -1,107 +1,109 @@
-.toolbar-background {
-  background: transparent;
-  border-color: transparent;
-}
+app-presentation {
+  .toolbar-background {
+    background: transparent;
+    border-color: transparent;
+  }
 
-.slide-zoom {
-  height: 100%;
-  .slide-block {
+  .slide-zoom {
     height: 100%;
-    background-color: #042f5a;
+    .slide-block {
+      height: 100%;
+      background-color: #042f5a;
+    }
   }
-}
 
-.slide-title {
-  margin: 0 0 2rem;
-  font-size: 1.5rem;
-  color: #fff;
-  letter-spacing: 0.1rem;
-  font-weight: 400;
-  opacity: 0.35;
-}
-
-.swiper-wrapper ion-slide {
-  height: 500px;
-  width: 300px;
-  .slide-image {
-    height: 100%;
-    width: 100%;
-    margin: 0 0 36px;
-    background-repeat: repeat-x;
-    background-size: cover;
-    animation: filter-slide-image 7s infinite,
-      animatedBackground 35s linear infinite;
-    -webkit-animation: filter-slide-image 7s infinite,
-      animatedBackground 35s linear infinite;
+  .slide-title {
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    opacity: 0.35;
   }
-  .slide-icon {
-    height: 45px;
-    width: auto;
-    margin: 0 0 23px -1px;
+
+  .swiper-wrapper ion-slide {
+    height: 500px;
+    width: 300px;
+    .slide-image {
+      height: 100%;
+      width: 100%;
+      margin: 0 0 36px;
+      background-repeat: repeat-x;
+      background-size: cover;
+      animation: filter-slide-image 7s infinite,
+        animatedBackground 35s linear infinite;
+      -webkit-animation: filter-slide-image 7s infinite,
+        animatedBackground 35s linear infinite;
+    }
+    .slide-icon {
+      height: 45px;
+      width: auto;
+      margin: 0 0 23px -1px;
+    }
   }
-}
 
-.slide-copy {
-  width: 80%;
-  top: 50px;
-  left: 35px;
-  position: absolute;
-  text-align: left;
-}
-
-p {
-  margin: 0;
-  font-size: 1.55rem;
-  font-weight: 300;
-  line-height: 1.55;
-  letter-spacing: 0.02rem;
-  color: #ffffff;
-  text-align: left;
-  b {
-    font-weight: 700;
-    color: #6ba2cf;
+  .slide-copy {
+    width: 80%;
+    top: 50px;
+    left: 35px;
+    position: absolute;
+    text-align: left;
   }
-}
 
-.button-ios,
-.button-md {
-  margin-top: 105px;
-  font-size: 1.45rem;
-  text-transform: none;
-  color: #91acce;
-}
+  p {
+    margin: 0;
+    font-size: 1.55rem;
+    font-weight: 300;
+    line-height: 1.55;
+    letter-spacing: 0.02rem;
+    color: #ffffff;
+    text-align: left;
+    b {
+      font-weight: 700;
+      color: #6ba2cf;
+    }
+  }
 
-.bar-button-ios,
-.bar-button-md,
-.bar-button-default.bar-button-ios-primary {
-  font-size: 1.25rem;
-  font-weight: 400;
-  text-transform: none;
-  margin: 1.3rem 0.2rem;
-  color: #91a2b7;
-}
+  .button-ios,
+  .button-md {
+    margin-top: 105px;
+    font-size: 1.45rem;
+    text-transform: none;
+    color: #91acce;
+  }
 
-.bar-button-md-primary:hover:not(.disable-hover) {
-  color: rgb(6, 36, 102);
-}
+  .bar-button-ios,
+  .bar-button-md,
+  .bar-button-default.bar-button-ios-primary {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: none;
+    margin: 1.3rem 0.2rem;
+    color: #91a2b7;
+  }
 
-.swiper-pagination-bullet-active {
-  background: rgb(107, 162, 207) !important;
-  opacity: 1 !important;
-}
-.swiper-pagination-bullet {
-  border-radius: 100%;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: #91a2b7;
-  opacity: 0.2;
-  pointer-events: auto;
-}
-.swiper-container-horizontal
-  > .swiper-pagination-bullets
+  .bar-button-md-primary:hover:not(.disable-hover) {
+    color: rgb(6, 36, 102);
+  }
+
+  .swiper-pagination-bullet-active {
+    background: rgb(107, 162, 207) !important;
+    opacity: 1 !important;
+  }
   .swiper-pagination-bullet {
-  margin: 0 10px;
+    border-radius: 100%;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #91a2b7;
+    opacity: 0.2;
+    pointer-events: auto;
+  }
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 10px;
+  }
 }
 
 @keyframes filter-slide-image {

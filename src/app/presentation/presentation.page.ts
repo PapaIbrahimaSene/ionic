@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
-import { Platform } from '@ionic/angular';
 import { TranslateService } from '@ngx-translate/core';
 
 export interface Slide {
@@ -13,20 +12,20 @@ export interface Slide {
 
 @Component({
   selector: 'app-presentation',
-  templateUrl: './presentation.page.html',
-  styleUrls: ['./presentation.page.scss']
+  templateUrl: 'presentation.page.html',
+  styleUrls: ['presentation.page.scss']
 })
 export class PresentationPage {
   slides: Slide[];
   showSkip = true;
+  dir: string;
 
   constructor(
     private router: Router,
     public menu: MenuController,
-    public translate: TranslateService,
-    public platform: Platform
+    public translate: TranslateService
   ) {
-    this.dir = platform.dir();
+    this.dir = 'ltr';
     translate
       .get([
         'PRESENTATION_SLIDE1_TITLE',
